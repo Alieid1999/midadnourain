@@ -1,0 +1,371 @@
+/*Mobile & Tablets*/
+
+@media (max-width: 300px) {
+    .SecRow .lead {
+        font-size: 16px;
+    }
+
+    .BodySection .ByCatMenuPage li {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .BodySection .DetailsText img,
+    .BodySection .DetailsText iframe {
+        float: none;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .HijriMiladiResponsive {
+        height: 1000px;
+    }
+
+    .BodySection .Blogger2 h2 {
+        clear: both;
+    }
+
+    .SliderNews .carousel-indicators {
+        display: none;
+    }
+
+    .BodySection .ByCatMenuPage li {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .SecRow .lead {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .GraySection .btn-primary {
+        font-size: 16px;
+  
+    }
+    .Logo_Banner .container {
+        /*! background-image: url('../../images/Mobile-logo.jpg'); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .SayyedPic img {
+        /*! visibility: hidden; */
+    }
+
+    .Logo_Banner .Logo img {
+        /*! visibility: hidden; */
+    }
+
+    .Logo_Banner .Banner p {
+        font-size: 30px;
+        margin-top: 2px;
+        font-weight: bold;
+    }
+
+    .Logo_Banner .Banner .MainHajj {
+        padding: 0px;
+    }
+
+        .Logo_Banner .Banner .MainHajj .Hastag_zekra {
+            font-size: 16px;
+            text-shadow: none;
+            background-color: #808080;
+            padding: 11px;
+        }
+
+    .Logo_Banner .Banner .TitleHajj {
+        color: #fff;
+        text-shadow: -1px 2px 2px #000;
+        font-size: 12px
+    }
+
+    .BodySection .AudioRow .RowSection img {
+        height: 250px;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        float: none;
+    }
+
+    .HijriMiladiResponsive {
+        height: 650px;
+        width: 100%;
+    }
+
+    .Khadamat .form-group .btn-primary {
+        width: 100%;
+    }
+
+    .input-group {
+        margin-bottom: 5px;
+    }
+
+    .DateBayynat {
+        text-align: center;
+    }
+
+    .LogoXsPic {
+        padding-top: 5px;
+    }
+
+    .ChooseLang {
+        margin-top: 10px;
+    }
+
+        .ChooseLang p span {
+            color: #d3d1c5;
+        }
+
+        .ChooseLang p a {
+            padding: 0 5px;
+            border: 0;
+            background-color: #d3d1c5;
+        }
+
+            .ChooseLang p a:hover {
+                background-color: #fff;
+            }
+
+
+    .TopMenu .navbar-nav {
+        float: none;
+    }
+
+        .TopMenu .navbar-nav li {
+            float: none;
+            text-align: center;
+        }
+
+    .SliderNews .item .carousel-caption h3 {
+        /*! font-size: 14px; */
+        line-height: 1;
+        /*! margin-top: 40px; */
+    }
+
+    .SliderNews .item img,
+    .SliderNews .item iframe {
+        height: 240px;
+    }
+
+    .IslamicCalendar .nav-stacked li a {
+        /*! font-size: 12px; */
+    }
+
+    .BodySection .Blogger1 a img {
+        float: right;
+        width: 250px;
+    }
+
+    .BodySection .Blogger2 div {
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+        clear: both;
+    }
+
+    .BodySection .Book a img {
+        width: 180px;
+        float: right;
+        margin-left: 15px;
+    }
+
+    .BodySection .ListingVedio div {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .BodySection .PhotoAlbumList img {
+        width: 250px;
+        float: right;
+    }
+
+    .BodySection .PhotoAlbumList h3 {
+        clear: both;
+        padding-top: 10px;
+    }
+
+    .BodySection .Book div {
+        height: auto;
+    }
+
+
+    .BodySection .VideoRow {
+        padding: 6px;
+        background: #e8e8e8;
+        border: 3px solid #fff;
+        width: 75px;
+        height: 115px;
+    }
+
+        .BodySection .VideoRow img {
+            float: right;
+            margin-bottom: 10px;
+            width: 60px;
+        }
+
+        .BodySection .VideoRow h2 {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .MediaCarousel .carousel-indicators {
+        max-height: 110px;
+        overflow-y: scroll;
+    }
+}
+/*Small Screen*/
+@media(min-width: 767px) and (max-width: 991px) {
+    .Logo_Banner .Banner p {
+        /*! line-height: 20px; */
+        margin: 0;
+        font-size: 40px;
+        padding: 0 50px;
+    }
+
+        .Logo_Banner .Banner p .buttom {
+            margin: 0;
+            padding: 1px
+        }
+
+    .HijriMiladiResponsive {
+        height: 650px;
+        width: 100%;
+    }
+
+    .Date {
+        font-size: 11px;
+    }
+
+        .Date .fa-calendar-o {
+            font-size: 18px;
+        }
+
+    .ChooseLang li {
+        font-size: 8pt;
+    }
+
+    .TopMenu .navbar-nav li a {
+        padding: 10px 20px;
+    }
+
+    .SliderNews {
+        /*! height: 360px; */
+    }
+
+
+    .MediaCarousel .carousel-indicators {
+        max-height: 110px;
+        overflow-y: scroll;
+    }
+
+    .IslamicCalendar .nav-stacked li {
+        padding: 5px;
+    }
+
+
+
+    .PhotoAlbum .nav-pills li a img {
+        width: 95px;
+        height: 72px;
+    }
+
+    .PhotoAlbum .PhotoImg img {
+        height: 182px;
+    }
+
+    .Douaa .nav-stacked li a {
+        padding: 10px;
+    }
+
+    .block-grid-v2-info {
+        height: 300px;
+    }
+
+    .BodySection .Blogger2 div {
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .BodySection .Book div {
+        /*! height: auto; */
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .BodySection #ctl00_CPH_2_IMG_1 {
+        height: 380px;
+    }
+
+    .SecRow .lead {
+        font-size: 22px;
+    }
+
+    .LastArticles .thumbnail img {
+        /*! width: 100%; */
+        /*! height: 100px; */
+    }
+
+    .SliderNews .item .carousel-caption p {
+        display: block !important;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+/*Medium Screen*/
+@media(min-width: 992px) and (max-width: 1199px) {
+    .LastArticles .thumbnail img {
+        width: 100%;
+        height: 125px;
+    }
+
+    .HijriMiladiResponsive {
+        height: 650px;
+        width: 100%;
+    }
+
+    .TopMenu .navbar-nav li a {
+        padding: 2px 30px;
+    }
+
+    .ChooseLang li {
+        font-size: 8pt;
+    }
+
+    .PhotoAlbum .nav-pills li a img {
+        width: 130px;
+        height: 108px;
+    }
+
+    .PhotoAlbum .PhotoImg img {
+        height: 255px;
+    }
+
+    .block-grid-v2-info {
+        height: 220px;
+    }
+
+
+
+    .MediaCarousel .carousel-indicators {
+        max-height: 110px;
+        overflow-y: scroll;
+    }
+
+    .Isteftaat td a {
+        font-size: 30px;
+    }
+}

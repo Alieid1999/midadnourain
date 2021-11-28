@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!-- Mirrored from arabic.bayynat.org.lb/Client Resources/Responsive_Bayynat/Hijri_Miladi.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 11:09:44 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+<title> هجري ميلادي</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="http://arabic.bayynat.org.lb/Client Resources/Responsive_Bayynat/Styles/css/bootstrap.css" rel="stylesheet">
+
+     <link href="http://arabic.bayynat.org.lb/Client Resources/Responsive_Bayynat/Styles/css/Site.css" rel="stylesheet">
+<SCRIPT type=text/javascript>
+function onOver(src,clrOver) {
+ if (!src.contains(event.fromElement)) {
+  src.style.cursor = 'hand';
+  src.bgColor = clrOver;
+	}
+  }
+function onOut(src,clrIn) {
+	if (!src.contains(event.toElement)) {
+     src.style.cursor = 'default';
+     src.bgColor = clrIn;
+	}
+	}
+</SCRIPT>
+<script language="JavaScript">
+var LanType= new Array(0)
+var LanName = new Array(1)
+var j = 0
+LanType[0]="index_files/home1"
+
+for(var i=0;i < (LanType.length) ;i++)
+{
+	LanName[j]=new Image()
+	LanName[j].src= LanType[i]+"1.gif"
+	LanName[j+1] = new Image()
+	LanName[j+1].src= LanType[i]+"2.gif"
+    j=j+2
+}
+function ChanImg(loc,ind) { 
+loc.src=LanName[ind].src; 
+   }
+
+</script>
+<SCRIPT language="javascript">
+
+<!--
+
+function check(geo) {
+        thistory=1              
+        day=geo.day.value;
+        month=geo.month.value;
+        year=geo.year.value;
+        //alert(day+" "+month+" "+year);
+        var dday=g+day*1
+        if (year<1) {kill();}
+        if (year>9999) {kill();}
+        if (year - Math.floor(year) != 0) {kill();}
+        if (month<1) {kill();}
+        if (month>12) {kill();}
+        if (month - Math.floor(month) != 0) {kill();}
+        if (day<1) {kill();}
+        if (dday>31) {kill();}
+        if (day- Math.floor(day) != 0) {kill();}        
+        if (g==0) {if (day == 31) {checkx ();}}
+        
+        ayear=year
+        if (geo.bora.value=="BC") {ayear=-year+1}
+        if (geo.bora.value=="BH") {ayear=-year+1}
+        convert ()
+        
+        
+}
+
+function checkx () 
+		{
+			if (month==2) {kill ();}
+			if (month==4) {kill ();}
+			if (month==6) {kill ();}
+			if (month==9) {kill ();}
+			if (month==11) {kill ();}
+        }
+
+function convert () {
+NOTE=''
+var     hijri=0; var georgean=0
+        if(g==1) {hijri=1} else {georgean=1};
+if (georgean>0) {
+georgean=0
+var     cdays=day*1;    
+        cdays += (month>11) ? 30: 0 ;   
+        cdays += (month>10) ? 31: 0;
+        cdays += (month>9) ? 30: 0; 
+        cdays += (month>8) ? 31: 0; 
+        cdays += (month>7) ? 31: 0; 
+        cdays += (month>6) ? 30: 0;  
+        cdays += (month>5) ? 31: 0;  
+        cdays += (month>4) ? 30: 0;  
+        cdays += (month>3) ? 31: 0; 
+        cdays += (month>2) ? 28: 0; 
+        cdays += (month>1) ? 31: 0; 
+        leap=0;cdays +=0
+        if (ayear/4 == Math.floor(ayear/4)) {leap=1;} 
+        if (ayear/100 == Math.floor(ayear/100)) {if (ayear/400 != Math.floor(ayear/400)) {leap=0;}}
+        if (leap==1) {if (month>2) {cdays +=1;}}
+        if (day>28+leap) {if (month==2)  {kill ()}}
+        myear = ayear*1+cdays/(365+leap);
+        process1 ()}    
+
+if (hijri>0) {
+cdays=Math.floor((month-1)*29.5)+day*1-2
+/* myear=ayear*1+cdays/354 */
+/* if (cdays==355) {myear +=ayear*1+1} */
+test1 ()
+process2 ()
+var hijri=0
+}
+
+result ()
+        }
+
+function test1() {
+var     Monthf=29.53058796;
+var     Gyear=ayear*0.970224044+621.574981435;
+var     GyearDf= Gyear-Math.floor(Gyear);
+        Gyear -= GyearDf;
+var     l=0;    
+        if (Gyear/4 == Math.floor(Gyear/4)) {l=1;} ;
+        if (Gyear/100 == Math.floor(Gyear/100)) {if (Gyear/400 != Math.floor(Gyear/400)) {l=0;}};
+        Gday= Math.floor((365+l)*GyearDf)+1;
+        Gyear +=Gday/(365+l);
+        var Hyear=(Gyear-621.574981435)/0.970224044;
+var     Hdayf=Hyear-Math.floor(Hyear),Hday=Hdayf*10631/30+1;
+        MONTH=1; if (month>1) {HDAY=1} else {HDAY=0}
+        while (MONTH<month) {
+        Hday +=1;HDAY+=1
+        if (Hday>Monthf) {MONTH +=1; Hday=Hday-Monthf}
+        }
+        if (HDAY>0) {YearD=HDAY} else {YearD=1};HDAY +=day*1
+        if (HDAY==356) {HDAY=355}
+        while (MONTH<13 && YearD<355) {
+        Hday +=1;YearD +=1
+        if (Hday>Monthf) {MONTH +=1; Hday -=Monthf}}
+        YearD -=1;myear=ayear*1+(HDAY-1)/(YearD+1)
+}
+
+function kill () {
+if (thistory ==1) {
+        document.dmy.day.value="";
+        document.dmy.month.value="";
+        document.dmy.year.value="";
+        alert("mismatch...please,\n maximum year 9999\n no fractions\n no '-' sign");
+        thistory=0;}
+        document.dmy.year.focus()
+} 
+
+
+function process1 () {
+        cyear=(myear-621.578082192)/0.97022298;
+        cyear += Math.floor(Math.abs(cyear)/3000)*30/10631
+        cday= cyear-Math.floor(cyear);
+        cyear -= cday;
+        if ((cday*10631/30)-Math.floor(cday*10631/30)<.5){cday= Math.floor(cday*10631/30) +1} else {cday= Math.floor(cday*10631/30) +2};
+        test2(cday)
+        mday=HDAY;cmonth=HMONTH;
+        if (cmonth==13){cmonth=1;cyear +=1};
+        var Precise=Pcision(JulianDay(ayear*1,month*1,day*1,19,30,0));
+        if (mday !=Precise) {if (mday==1 && Precise>28) {cmonth -=1;if (cmonth==0) {cmonth=12;cyear -=1}} else {if (mday>28 && Precise<3) {cmonth +=1;if (cmonth==13) {cmonth=1;cyear +=1}}}} 
+        mday=Precise
+        if (cyear<1) {cyear -=1}
+        result();
+        }
+
+function test2 (HdayN) {
+var     Monthf=29.53058796;
+var     Gyear=cyear*0.970224044+621.574981435;
+var     GyearDf= Gyear-Math.floor(Gyear);
+        Gyear -= GyearDf;
+var     l=0;    
+        if (Gyear/4 == Math.floor(Gyear/4)) {l=1;} ;
+        if (Gyear/100 == Math.floor(Gyear/100)) {if (Gyear/400 != Math.floor(Gyear/400)) {l=0;}};
+        Gday =Math.floor((365+l)*GyearDf)+1;
+        Gyear +=Gday/(365+l);
+        var Hyear=(Gyear-621.574981435)/0.970224044;
+var     Hdayf=Hyear-Math.floor(Hyear),Hday=Hdayf*10631/30+1;
+        Hmonth=1;HdayF=1
+        while (HdayF<HdayN) {
+        Hday +=1;HdayF +=1
+        if (Hday>= Monthf) {Hday=Hday-Monthf;Hmonth +=1};
+        }
+        HDAY=Math.floor(Hday)+1;HMONTH=Hmonth;
+}
+
+
+function process2 () {
+        cyear=myear*0.970224044+621.574981435;
+var     fday= cyear-Math.floor(cyear);
+        cyear -= fday;
+var     l=0;    
+        if (cyear/4 == Math.floor(cyear/4)) {l=1;} 
+        if (cyear/100 == Math.floor(cyear/100)) {if (cyear/400 != Math.floor(cyear/400)) {l=0;}}
+
+if      ((365+l)*fday-Math.floor((365+l)*fday)<.5){cday= Math.floor((365+l)*fday)} else {cday= Math.floor((365+l)*fday)+1}; 
+        cmonth=1;mday=cday
+        if (cday>31) {cmonth +=1;mday=cday-31;}
+        if (cday>59+l) {cmonth +=1;mday=cday-59-l;}
+        if (cday>90+l) {cmonth +=1;mday=cday-90-l;}
+        if (cday>120+l) {cmonth +=1;mday=cday-120-l;}  
+        if (cday>151+l) {cmonth +=1;mday=cday-151-l;} 
+        if (cday>181+l) {cmonth +=1;mday=cday-181-l;}
+        if (cday>212+l) {cmonth +=1;mday=cday-212-l;}
+        if (cday>243+l) {cmonth +=1;mday=cday-243-l;} 
+        if (cday>273+l) {cmonth +=1;mday=cday-273-l;}
+        if (cday>304+l) {cmonth +=1 ;mday=cday-304-l;}
+        if (cday>334+1) {cmonth +=1 ;mday=cday-334-l;}
+        Adjust(l)
+        if (cyear <1) {cyear -=1;}      
+}
+
+function Adjust(Leap) {
+var Hjdn=JulianDay(cyear*1,cmonth*1,mday*1,19,30,0)*1; var Hdn=Pcision(Hjdn);var Hdnm=Pcision(Hjdn-1);var Hdnp=Pcision(Hjdn+1)
+if (Hdn !=day*1) {
+        if (Hdnp==day*1) {var C=1}
+        if (Hdnm==day*1) {var C=-1}
+        if (Hdnp!=day*1 && Hdnm!=day*1) {var C=-1;NOTE=' **'}
+        mday +=C
+        if (mday>28) {
+                   if (cmonth==11 || cmonth==9 || cmonth==6 || cmonth==4) {if (mday>30) {mday=1;cmonth +=1}};
+                   if (cmonth==12 || cmonth==10 || cmonth==8 || cmonth==7 || cmonth==5 || cmonth==3 || cmonth==1) {if (mday>31) {mday=1;cmonth +=1}};
+                   if (cmonth==2) {if (mday>28+Leap) {mday=1;cmonth=3}};
+                   if (cmonth==13) {cmonth=1;cyear +=1}
+                        }
+        if (mday==0) {cmonth -=1;if (cmonth==0) {mday=31;cmonth=12;cyear -=1}
+           else {  if (cmonth==11 || cmonth==9 || cmonth==6 || cmonth==4) {mday=30};
+                   if (cmonth==10 || cmonth==8 || cmonth==7 || cmonth==5 || cmonth==3 || cmonth==1) {mday=31};
+                   if (cmonth==2) {mday=28+Leap} } }
+                
+                        }}
+
+function result () {
+        if (thistory==1) {
+        WeekDay ();
+        if (cyear<0)
+        {
+			if (g==0) 
+			{
+				bora="BH"
+			} 
+		else 
+			{
+			bora="BC"
+			}
+			
+		} 
+        else 
+        {
+			if (g==0) 
+			{
+				bora="AH"
+			} 
+			else 
+			{
+				bora="AD"
+			}
+		}
+        
+        yfinale=day+"/"+month+"/"+year+" ";
+        finale=mday+"/"+cmonth+"/"+Math.abs(cyear)+" ";
+        thistory=0;
+		document.dmy.hResult.value=yfinale+document.dmy.bora.value + DAY + " = " + finale + bora;
+		}
+}
+
+function WeekDay () {
+        if (g==1) {var Dyear=cyear;var Dmonth=cmonth;var Dday=mday} else {var Dyear=year*1;var Dmonth=month*1;var Dday=day*1} 
+        if (document.dmy.bora.value=="BC" || Dyear<0 ) {Dyear=-Math.abs(Dyear)+1}
+        var DayCount=0; var L=0
+        while (Dyear<10000){
+        if (Dyear/4==Math.floor(Dyear/4)) {L=1} else {L=0};
+        if (Dyear/100==Math.floor(Dyear/100)) { if (Dyear/400 !=Math.floor(Dyear/400)) {L=0}};
+        if (Dmonth==14) {DayCount +=365+L} else {
+        while (Dmonth<13) {
+        if (Dmonth==1 || Dmonth==3 || Dmonth==5 || Dmonth==7 || Dmonth==8 || Dmonth==10 || Dmonth==12) {var limit=31} else {var limit=30};
+        if (Dmonth==2) {limit=28+L}
+        if (Dday==40) {DayCount +=limit} else {while (Dday<limit){
+        Dday +=1;DayCount +=1;}};
+        Dmonth +=1;Dday=40}};
+        Dyear +=1; Dmonth=14};
+        
+        var Dweek=DayCount%7;
+        if (Dweek==0) {DAY=" (Fri)"}; 
+        if (Dweek==6) {DAY=" (Sat)"}; 
+        if (Dweek==5) {DAY=" (Sun)"}; 
+        if (Dweek==4) {DAY=" (Mon)"}; 
+        if (Dweek==3) {DAY=" (Tue)"}; 
+        if (Dweek==2) {DAY=" (Wed)"}; 
+        if (Dweek==1) {DAY=" (Thu)"}; 
+}
+
+
+function rad(angle)
+{return r(angle)*Math.PI/180}
+function sin(angle)
+{return Math.sin(rad(angle))}
+function cos(angle)
+{return Math.cos(rad(angle))}
+function r(Input)
+{if (Input >=0) {var Output=Input-Math.floor(Input/360)*360} else {var Output=Input-Math.ceil(Input/360)*360+360;}
+return Output}
+
+function Moon(jd)
+    {  
+var T_ = (jd-EPOCH*1)/ 36525.0; 
+var mE=297.8502042
+                     + 445267.1115168*T_
+                     - 0.0016300*(T_*T_)
+                     + (T_*T_*T_)/545868.0
+                     - (T_*T_*T_*T_)/113065000
+var mA=134.9634114
+                     + 477198.8676313*T_
+                     + 0.0089970*(T_*T_)
+                     + (T_*T_*T_)/69699.0
+                     - (T_*T_*T_*T_)/863310000.0
+
+var SmA=357.5291092 
+                + (35999.0502909*T_) 
+                - (0.0001536 *T_*T_) 
+                + ((T_*T_*T_)/24490000)
+var D  = r(mE)*1;
+var S  = r(SmA)*1;
+var M = r(mA)*1;
+var phaseAngle=180-D-6.289*sin(M)+2.1*sin(S)-1.274*sin(r(2*D)-M)-0.658*sin(2*D);
+phaseAngle +=-0.214*sin(2*M); 
+phaseAngle +=-0.110*sin(1*D)
+  /** k  (46.1) **/
+var iF=(1+cos(phaseAngle))/2*(phaseAngle/Math.abs(phaseAngle))
+return iF }
+
+function Pcision(F) {
+var Status='ok';var Dn=0;var jDn=F
+if (Moon(jDn-1)<=0) {jDn -=1;Dn +=1}
+while (Status=='ok') {
+var Fn=Moon(jDn);var Fn2=Moon(jDn-1);
+if (((Fn/Math.abs(Fn))*(Fn2/Math.abs(Fn2)))==1) {Dn +=1;jDn -=1} else {if (Math.abs(Fn*Fn2)<.2) {Status='End'} else {Dn +=1;jDn -=1}}
+}
+return Dn}
+
+function JulianDay (gYear,gMonth,gDay,gHour,gMinutes,gSeconds)
+{
+var calendar='GREGORIAN'
+EPOCH = 2451545.0;
+if (gMonth <= 2) { --gYear;gMonth += 12;}
+var A = Math.floor(gYear/100);
+var B=0
+if (calendar == 'GREGORIAN') {B =Math.floor( 2 - A + (A / 4))} else {B = 0;}
+var dayFraction = (gHour + gMinutes/60.0 + gSeconds/3600.0) / 24.0;
+var dayAndTime  = gDay + dayFraction;
+jd_ =Math.floor(365.25 * (gYear + 4712))
+          +Math.floor(30.6001 * (gMonth+1))
+          + dayAndTime + B -63.5;
+return jd_*1
+}
+
+
+var Clock = 0;
+function Update() {
+var Rdate= new Date();
+var Thetime="";
+var Thedate="";
+var Thehours=Rdate.getHours();
+var Theminutes=Rdate.getMinutes();
+var Theseconds=Rdate.getSeconds();
+var Theyear=Rdate.getYear();
+var Themonth=Rdate.getMonth();
+var Theday=Rdate.getDate();
+var ampm;
+
+if (Thehours < 12) {if (Thehours == 0) {ampm = "M"; Thehours = 12;} else {ampm = "am";}} else { ampm = "pm"; if (Thehours > 12) {Thehours -= 12;}else{}}
+if (Thehours <10) {Thehours= "0"+ Thehours;}
+if (Theminutes <10) {Theminutes= "0"+ Theminutes;}
+if (Theseconds <10) {Theseconds= "0"+ Theseconds;}
+Thetime +=Thehours +":"+ Theminutes + ":" + Theseconds +" "+ ampm ;
+Themonth +=1 ; Theyear +=1900;
+if (Theday <10) {Theday= "0"+ Theday;}
+if (Themonth <10) {Themonth= "0"+ Themonth;}
+Thedate +=Themonth +"/"+ Theday +"/"+ Theyear +" ";
+document.timeForm.datebox.value = Thedate;
+document.timeForm.timebox.value = Thetime;
+clearTimeout( Clock );
+   Clock = setTimeout( "Update()", 1000 )}
+
+function Thec (w,t) 
+{
+ w ? document.dmy.bora.value="AD":document.dmy.bora.value="AH"
+}
+function Cbora(c) {
+
+if (c.value=="BC") {var b="AD"}
+if (c.value=="AD") {var b="BC"}
+if (c.value=="BH") {var b="AH"}
+if (c.value=="AH") {var b="BH"}
+c.value=b
+}
+
+//-->
+
+</SCRIPT>
+</head>
+
+<body>
+
+<FORM NAME="dmy">
+    <div class="container-fluid">
+    <input name=bora onclick=Cbora(this.form.bora) type=hidden value=AD />
+    <div class="row Khadamat">
+    <div class="col-xs-12 form-group">
+     <p>الرجاء إختيار التاريخ</p>
+       <label>اليوم: </label>
+    <select size="1" name="day" class="form-control">
+         <option value=1 
+              selected>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+              <option value=6>6</option>
+              <option value=7>7</option>
+              <option value=8>8</option>
+              <option value=9>9</option>
+              <option value=10>10</option>
+              <option value=11>11</option>
+              <option value=12>12</option>
+              <option value=13>13</option>
+              <option value=14>14</option>
+              <option value=15>15</option>
+              <option value=16>16</option>
+              <option value=17>17</option>
+              <option value=18>18</option>
+              <option value=19>19</option>
+              <option value=20>20</option>
+              <option value=21>21</option>
+              <option value=22>22</option>
+              <option value=23>23</option>
+              <option value=24>24</option>
+              <option value=25>25</option>
+              <option value=26>26</option>
+              <option value=27>27</option>
+              <option value=28>28</option>
+              <option value=29>29</option>
+              <option value=30>30</option>
+              <option value=31>31</option>
+                              </select>
+
+     <label>الشهر: </label>
+    <select size="1" name="month" class="form-control">
+          <option value=1 selected>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5</option>
+              <option value=6>6</option>
+              <option value=7>7</option>
+              <option value=8>8</option>
+              <option value=9>9</option>
+              <option value=10>10</option>
+              <option value=11>11</option>
+              <option value=12>12</option>
+     </select>
+
+      <label>السنة: </label>
+    <input name="year" class="form-control" />
+    </div>
+
+     <div class="col-xs-12 form-group">
+     <p>الرجاء إختيار التقويم: </p>
+      <div class="row">
+        <div class="col-sm-6 col-xs-12"><input type="radio" class="radioHij" name="choice" value="g" onClick="g = 0; Thec(false, document.dmy, 1)"/><label>من الميلادي للهجري</label>
+        </div>
+        <div class="col-sm-6 col-xs-12"><input type="radio" class="radioHij" name="choice" value="h" onClick="g = 1; Thec(true, document.dmy, 0)"/><label>من الهجري للميلادي</label>
+        </div>
+         </div>
+     </div>
+
+     <div class="col-xs-12 form-group">
+      <input type="button" value="&#1578;&#1581;&#1608;&#1610;&#1604;" name="convert" onClick="check(this.form);" class="btn btn-primary" >
+     </div>
+
+     <div class="col-xs-12 form-group">
+         <p>النتيجة:</p>
+         <input name="hResult" class="form-control Result" /> 
+     </div>
+        </div>
+        </div>
+</FORM>
+    
+
+
+</body>
